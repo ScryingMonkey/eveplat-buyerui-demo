@@ -1,0 +1,44 @@
+2020-01-30T07:36:27.967Z [INFO]: Git SSH Key acquired
+2020-01-30T07:36:28.076Z [INFO]: # Cloning repository: git@github.com:ScryingMonkey/eveplat.git
+2020-01-30T07:36:28.319Z [INFO]: Agent pid 71
+2020-01-30T07:36:28.324Z [INFO]: Identity added: /root/.ssh/git_rsa (/root/.ssh/git_rsa)
+2020-01-30T07:36:28.767Z [INFO]: Cloning into 'eveplat'...
+2020-01-30T07:36:29.368Z [INFO]: Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
+2020-01-30T07:36:29.605Z [INFO]: # Checking for Git submodules at: /codebuild/output/src404198689/src/eveplat/.gitmodules
+2020-01-30T07:36:29.638Z [INFO]: # Retrieving cache...
+2020-01-30T07:36:29.727Z [INFO]: # Extracting cache...
+2020-01-30T07:36:29.736Z [INFO]: # Extraction completed
+2020-01-30T07:36:29.737Z [INFO]: # Retrieving environment cache...
+2020-01-30T07:36:29.806Z [INFO]: # Retrieved environment cache
+2020-01-30T07:37:03.656Z [INFO]: ## Starting Frontend Build
+                                 # Starting phase: preBuild
+                                 # Executing command: yarn install
+2020-01-30T07:37:04.247Z [INFO]: yarn install v1.16.0
+2020-01-30T07:37:04.349Z [INFO]: [1/4] Resolving packages...
+2020-01-30T07:37:05.013Z [INFO]: [2/4] Fetching packages...
+2020-01-30T07:37:29.372Z [INFO]: info fsevents@2.1.2: The platform "linux" is incompatible with this module.
+                                 info "fsevents@2.1.2" is an optional dependency and failed compatibility check. Excluding it from installation.
+2020-01-30T07:37:29.379Z [INFO]: info fsevents@1.2.9: The platform "linux" is incompatible with this module.
+2020-01-30T07:37:29.381Z [INFO]: info "fsevents@1.2.9" is an optional dependency and failed compatibility check. Excluding it from installation.
+2020-01-30T07:37:29.386Z [INFO]: [3/4] Linking dependencies...
+2020-01-30T07:37:29.389Z [WARNING]: warning " > @testing-library/user-event@7.2.1" has unmet peer dependency "@testing-library/dom@>=5".
+2020-01-30T07:37:29.405Z [WARNING]: warning " > reactfire@1.0.0" has incorrect peer dependency "react@0.13.x || 0.14.x || 15.x.x".
+2020-01-30T07:37:29.406Z [WARNING]: warning " > reactfire@1.0.0" has incorrect peer dependency "firebase@2.x.x || 3.x.x".
+2020-01-30T07:37:41.186Z [INFO]: [4/4] Building fresh packages...
+2020-01-30T07:37:43.473Z [INFO]: Done in 39.23s.
+2020-01-30T07:37:43.497Z [INFO]: # Completed phase: preBuild
+                                 # Starting phase: build
+2020-01-30T07:37:43.499Z [INFO]: # Executing command: yarn run build
+2020-01-30T07:37:43.692Z [INFO]: yarn run v1.16.0
+2020-01-30T07:37:43.730Z [INFO]: $ react-scripts build
+2020-01-30T07:37:45.215Z [INFO]: Creating an optimized production build...
+2020-01-30T07:37:51.253Z [INFO]: Failed to compile.
+2020-01-30T07:37:51.255Z [INFO]: ./src/contexts/Firebase/_index.js
+                                 Cannot find file './firebaseConfig' in './src/contexts/Firebase'.
+2020-01-30T07:37:51.283Z [WARNING]: error Command failed with exit code 1.
+2020-01-30T07:37:51.285Z [INFO]: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+2020-01-30T07:37:51.291Z [ERROR]: !!! Build failed
+2020-01-30T07:37:51.361Z [ERROR]: !!! Non-Zero Exit Code detected
+2020-01-30T07:37:51.362Z [INFO]: # Starting environment caching...
+2020-01-30T07:37:51.362Z [INFO]: # Environment caching completed
+Terminating logging...

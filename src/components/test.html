@@ -1,0 +1,73 @@
+<style>
+  .wrapper {
+    margin: 100px;
+  }
+  .box {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: blue;
+    border: 2px solid rgb(2, 2, 168);
+    margin: -2px;
+    animation: 2s ease-out 0s infinite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .one {
+    animation-name: rightslide;
+  }
+  .four {
+    animation-name: leftslide;
+  }
+
+  @keyframes leftslide {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: 100px;
+      background: rgb(18, 18, 218);
+    }
+    52% {
+      left: 0px;
+      background: blue;
+    }
+    54% {
+      left: 1px;
+    }
+    56% {
+      left: 0px;
+    }
+    96% {
+      left: 0px;
+    }
+  }
+  @keyframes rightslide {
+    0% {
+      right: 0px;
+    }
+    48% {
+      right: 0px;
+    }
+    75% {
+      right: 100px;
+      background: rgb(18, 18, 218);
+    }
+    98% {
+      right: 0px;
+    }
+    100% {
+      right: 1px;
+    }
+  }
+</style>
+
+<div class="wrapper">
+  <span class="box one"></span>
+  <span class="box "></span>
+  <span class="box "></span>
+  <span class="box "></span>
+  <span class="box four"></span>
+</div>
