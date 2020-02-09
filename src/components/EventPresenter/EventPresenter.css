@@ -1,25 +1,51 @@
 .eventpresenter-layout {
   display: flex;
-  /* justify-content: space-evenly; */
+  /* justify-content: center; */
 }
-/* .eventpresenter-event {
+.eventscreen {
+  transition: all 1s;
+}
+.eventscreen-detail {
+  text-align: left;
+}
+.eventscreen-detail > h1 {
+  font-size: 2rem;
+  margin: 2vh 2vw;
+}
+.eventscreen-detail-desc {
+  margin: 2vh 5vw;
+  max-height: 30vh;
+  overflow-y: scroll;
+}
+.eventscren-stats-box {
   display: flex;
-  justify-content: center;
-  margin: 20px;
-  padding: 5px;
-  width: 250px;
-  height: 400px;
-  text-align: center;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2vh 2vw;
 }
-.eventpresenter-event:hover {
-  animation: flip 2sec linear;
+.eventpage-addtickets {
+  display: flex-wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh 2vw;
+  font-size: 1.5rem;
 }
-@keyframes flip {
-  0% {
-    transform: rotateY(0deg);
+.eventpage-addtickets > div {
+  margin: 5px 10px;
+}
+
+@media only screen and (max-width: 399px) {
+  .eventpresenter-layout {
+    border: 1px solid red;
+    flex-direction: column;
   }
-  100% {
-    transform: rotateY(180deg);
+}
+@media only screen and (min-width: 400px) {
+  .eventpresenter-layout {
+    border: 1px solid blue;
+    flex-direction: initial;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    padding: 2vh 2vw;
   }
-} */
+}

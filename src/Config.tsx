@@ -1,4 +1,12 @@
-import { CbRoute, Link, TicketEvent, Styles, Screen } from "./types/_index";
+import {
+  CbRoute,
+  Link,
+  TicketEvent,
+  Ticket,
+  Styles,
+  Screen
+} from "./types/_index";
+import { CartItem } from "./components/ShoppingCartPresenter/@types";
 
 const landingimage01 = require("./assets/image_harvestfest_05.png");
 const section01_image = require("./assets/image_harvestfest_04.png");
@@ -7,6 +15,7 @@ const section03_image = require("./assets/image_harvestfest_01.jpg");
 
 export type Config = {
   version: string;
+  routes: CbRoute[];
   topbar: {
     title: string;
     logo: string;
@@ -20,10 +29,16 @@ export type Config = {
   };
   screens: { [key: string]: Screen };
   events: TicketEvent[];
+  cart: CartItem[];
   styles: Styles;
+  f: { [key: string]: (...args: any[]) => void };
 };
 const config: Config = {
   version: "0.1.0",
+  routes: [
+    { label: "Home", route: "/", exact: true },
+    { label: "Routes", route: "/event", exact: true }
+  ],
   topbar: {
     title: "",
     logo: "",
@@ -85,6 +100,7 @@ const config: Config = {
     }
   },
   events: [],
+  cart: [],
   styles: {
     primaryColor: "#0029e0",
     primaryLightColor: "#6755ff",
@@ -94,6 +110,7 @@ const config: Config = {
     secondaryDarkColor: "#aa8800",
     primaryTextColor: "#ffffff",
     secondaryTextColor: "#000000"
-  }
+  },
+  f: {}
 };
 export default config;

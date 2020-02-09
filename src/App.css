@@ -1,19 +1,23 @@
-:root{
-    --primaryColor: #0029e0;
-    --primaryLightColor: #6755ff;
-    --primaryDarkColor: #0000ad;
-    --secondaryColor: #e0b700;
-    --secondaryLightColor: #ffe94b;
-    --secondaryDarkColor: #aa8800;
-    --primaryTextColor: #2c2c2c ;
-    --secondaryTextColor: #ffffff;
-    --primaryLinkColor: #448dfa;
-    --button-default-color: var(--secondaryColor);
-    --button-highlight-color: var(--secondaryLightColor);
+:root {
+  --primaryColor: #4c38ff;
+  --primaryLightColor: #6755ff;
+  --primaryDarkColor: #0000ad;
+  --primaryTransparentColor: #0029e0b4;
+  --secondaryColor: #e0b700;
+  --secondaryLightColor: #ffe94b;
+  --secondaryDarkColor: #aa8800;
+  --primaryTextColor: #2c2c2c;
+  --secondaryTextColor: #ffffff;
+  --primaryLinkColor: #448dfa;
+  --button-default-color: var(--secondaryColor);
+  --button-highlight-color: var(--secondaryLightColor);
+  --buttonUpColor: rgb(0, 200, 0, 0.5);
+  --buttonUpHighlightColor: rgb(0, 220, 0, 0.7);
+  --buttonDownColor: rgb(200, 0, 0, 0.5);
+  --buttonDownHighlightColor: rgb(220, 0, 0, 0.7);
 
-    --test-border: 1px dotted red;
+  --test-border: 1px dotted red;
 }
-
 
 .App {
   text-align: center;
@@ -27,39 +31,51 @@
   pointer-events: none;
 }
 .App-topbar {
-  background-color: var(--primaryColor);
-  min-height: 20vh;
+  background-color: var(--primaryTransparentColor);
+  min-height: 5vh;
+  font-size: 10px;
+  color: var(--secondaryTextColor);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
+}
+.App-topbar:hover {
+  /* transition: all 0.3s; */
+  background-color: var(--primaryColor);
   font-size: calc(10px + 2vmin);
   color: var(--secondaryTextColor);
-  position: sticky
+  min-height: 20vh;
 }
 .App-footer {
-  background-color: var(--primaryColor);
-  min-height: 20vh;
+  background-color: var(--primaryTransparentColor);
+  min-height: 5vh;
+  font-size: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: var(--secondaryTextColor);
+  transition: all 0.3s;
 }
-
+.App-footer:hover {
+  min-height: 20vh;
+  font-size: calc(10px + 2vmin);
+  background-color: var(--primaryColor);
+}
 .layout-grid {
   height: 100vh;
   width: 100vw;
 }
 .layout-topbar {
   width: inherit;
-  position:sticky;
+  position: fixed;
   top: 0;
 }
 .layout-content {
   width: inherit;
-  margin: 100px 0px;
+  margin: 5vh 0px;
 }
 .layout-footer {
   width: inherit;

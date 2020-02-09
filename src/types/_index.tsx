@@ -1,5 +1,7 @@
 import TicketEvent from "./TicketEvent";
+import Ticket from "./Ticket";
 export { TicketEvent };
+export { Ticket };
 
 export type Link = {
   label: string;
@@ -15,18 +17,14 @@ export type Section = {
   title?: string;
   blurb?: string;
   image?: string;
-  cta?: Cta;
-};
-export type Cta = {
-  label: string;
-  clickHandler: () => void;
+  cta?: { label: string; clickHandler: () => void };
 };
 export type Screen = {
   route: CbRoute;
   landing: {
     image: string;
     imageBlurb: string;
-    cta: Cta;
+    cta: { label: string; clickHandler: () => void };
   };
   sections: Section[];
 };

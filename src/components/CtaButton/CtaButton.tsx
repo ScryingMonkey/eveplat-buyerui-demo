@@ -1,15 +1,13 @@
-import React from 'react';
-import './CtaButton.css';
-import {Cta} from '../../types/_index';
+import React from "react";
+import "./CtaButton.css";
 
-export const CtaButton:React.FC<{
-    cta: Cta;
-}> = ({cta}) => {
-    return (
-        <div 
-            className="cta-button"
-            onClick={() => cta.clickHandler()}>
-                {cta.label}
-        </div>
-    );
-}
+export const CtaButton: React.FC<{
+  label: string;
+  clickHandler: () => void;
+}> = ({ label, clickHandler }) => {
+  return (
+    <div className="cta-button" onClick={() => clickHandler()}>
+      {label}
+    </div>
+  );
+};
