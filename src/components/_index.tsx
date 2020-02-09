@@ -8,6 +8,7 @@ import FlipCard from "./FlipCard/FlipCard";
 import IncrementerButton from "./IncrementerButton/IncrementerButton";
 import LandingImage from "./LandingImage/LandingImage";
 import { CtaButton } from "./CtaButton/CtaButton";
+import { TileButton } from "./TileButton/TileButton";
 import CbSvg from "./CbSvg";
 
 export {
@@ -20,6 +21,7 @@ export {
   LandingImage,
   CbSvg,
   CtaButton,
+  TileButton,
   FlipCard,
   IncrementerButton
 };

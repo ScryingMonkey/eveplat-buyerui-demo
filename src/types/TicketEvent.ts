@@ -21,6 +21,7 @@ export default class TicketEvent {
   ticketPrice: number = NaN;
   buyerDescription: string = "";
   managerDescription: string = "";
+  image: string = "";
 
   static eventFields: EventFields = {
     name: { valueKey: "name", label: "Name", type: "text" },

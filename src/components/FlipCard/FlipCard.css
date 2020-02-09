@@ -70,8 +70,10 @@
   text-align: left;
   padding: 0px 10px;
   white-space: wrap;
+  overflow-y: hidden;
   color: --var(--primaryTextColor);
   font-size: var(--font-size);
+  max-height: 50%;
 }
 .cb-FlipCard-link-container {
   height: auto;
@@ -100,19 +102,13 @@
   .cb-FlipCard:hover .cb-FlipCard-inner {
     transform: rotateY(180deg);
     width: var(--width);
-    height: fit-content;
+    /* height: fit-content; */
   }
-  .cb-FlipCard {
-    border: 1px solid red;
-  }
+
   .cb-FlipCard-detail {
     width: var(--width);
     height: var(--height);
   }
-  .cb-FlipCard-link-container {
-    position: relative;
-  }
-
   .cb-FlipCard-inner,
   .cb-FlipCard-front,
   .cb-FlipCard-back {
@@ -127,7 +123,6 @@
     height: var(--expanded-height);
   }
   .cb-FlipCard {
-    border: 1px solid blue;
     margin: calc(var(--card-margin-y) / 2 + 5px)
       calc(var(--card-margin-x) / 2 + 5px);
   }

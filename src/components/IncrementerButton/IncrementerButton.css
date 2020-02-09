@@ -1,0 +1,51 @@
+:root {
+  --button-dims: 50px;
+  --border: 1px solid rgb(224, 224, 224);
+  --background-up: var(--buttonUpColor, rgb(0, 200, 0));
+  --background-up-highlight: var(--buttonUpHighlightColor, rgb(60, 200, 60));
+  --background-down: var(--buttonDownColor, rgb(200, 0, 0));
+  --background-down-highlight: var(
+    --buttomDownHighlightColor,
+    rgb(200, 60, 60)
+  );
+}
+.IncrementerButton {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 20px;
+  border: var(--border);
+  width: fit-content;
+  overflow: hidden;
+}
+.IncrementerButton > .value {
+  width: calc(var(--button-dims) * 2);
+}
+.IncrementerButton > .button {
+  width: var(--button-dims);
+  height: var(--button-dims);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border);
+  border-top: 0px;
+  border-bottom: 0px;
+  user-select: none;
+}
+
+.IncrementerButton > .up {
+  background: var(--background-up);
+}
+.IncrementerButton > .up:hover,
+.IncrementerButton > .up:active {
+  background: var(--background-up-highlight);
+}
+.IncrementerButton > {
+  background: var(--background-up-highlight);
+}
+.IncrementerButton > .down {
+  background: var(--background-down);
+}
+.IncrementerButton > .down:hover,
+.IncrementerButton > .down:active {
+  background: var(--background-down-highlight);
+}

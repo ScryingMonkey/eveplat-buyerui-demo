@@ -37,4 +37,5 @@ export type Styles = {
   secondaryDarkColor: string;
   primaryTextColor: string;
   secondaryTextColor: string;
+  images: { [key: string]: any };
 };

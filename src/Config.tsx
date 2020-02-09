@@ -109,7 +109,13 @@ const config: Config = {
     secondaryLightColor: "#ffe94b",
     secondaryDarkColor: "#aa8800",
     primaryTextColor: "#ffffff",
-    secondaryTextColor: "#000000"
+    secondaryTextColor: "#000000",
+    images: {
+      landingimage01: landingimage01,
+      section01_image: section01_image,
+      section02_image: section02_image,
+      section03_image: section03_image
+    }
   },
   f: {}
 };

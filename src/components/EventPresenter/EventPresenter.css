@@ -36,13 +36,11 @@
 
 @media only screen and (max-width: 399px) {
   .eventpresenter-layout {
-    border: 1px solid red;
     flex-direction: column;
   }
 }
 @media only screen and (min-width: 400px) {
   .eventpresenter-layout {
-    border: 1px solid blue;
     flex-direction: initial;
     /* align-items: center; */
     justify-content: space-evenly;
