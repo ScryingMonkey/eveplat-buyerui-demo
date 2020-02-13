@@ -33,7 +33,7 @@ function App() {
             {/* <Suspense fallback={<Loading />}> */}
             <div className="layout-content">
               <Switch>
-                <Route path={"/"} component={EventPresenter} exact={true} />
+                <Route path={"/"} component={LandingImage} exact={true} />
                 <Route
                   path={"/events"}
                   component={EventPresenter}

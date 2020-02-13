@@ -10,6 +10,7 @@ import LandingImage from "./LandingImage/LandingImage";
 import { CtaButton } from "./CtaButton/CtaButton";
 import { TileButton } from "./TileButton/TileButton";
 import CbSvg from "./CbSvg";
+import { WorkflowDnD } from "./WorkflowDnD/WorkflowDnD";
 
 export {
   Loading,
@@ -23,5 +24,6 @@ export {
   CtaButton,
   TileButton,
   FlipCard,
-  IncrementerButton
+  IncrementerButton,
+  WorkflowDnD
 };

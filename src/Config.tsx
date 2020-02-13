@@ -12,6 +12,12 @@ const landingimage01 = require("./assets/image_harvestfest_05.png");
 const section01_image = require("./assets/image_harvestfest_04.png");
 const section02_image = require("./assets/image_harvestfest_03.jpg");
 const section03_image = require("./assets/image_harvestfest_01.jpg");
+const daysky01 = require("./assets/daysky01.jpg");
+const wintertrees01 = require("./assets/wintertrees01.jpg");
+const wintertrees02 = require("./assets/wintertrees02.jpg");
+const loopable_landscape_grass01 = require("./assets/loopable_landscape_grass01.jpg");
+const endlessbackground_chemistry01 = require("./assets/endlessbackground_chemistry01.jpg");
+const endlesssbackground_wintertrees04 = require("./assets/endlesssbackground_wintertrees04.jpg");
 
 export type Config = {
   version: string;
@@ -114,7 +120,13 @@ const config: Config = {
       landingimage01: landingimage01,
       section01_image: section01_image,
       section02_image: section02_image,
-      section03_image: section03_image
+      section03_image: section03_image,
+      wintertrees01: wintertrees01,
+      wintertrees02: wintertrees02,
+      daysky01: daysky01,
+      loopable_landscape_grass01: loopable_landscape_grass01,
+      endlessbackground_chemistry01: endlessbackground_chemistry01,
+      endlesssbackground_wintertrees04: endlesssbackground_wintertrees04
     }
   },
   f: {}
